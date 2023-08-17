@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own text editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bf4e20c3c1.js" crossorigin="anonymous"></script>
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <header class="bg-indigo-400 py-5 ">
+        <section class="grid grid-cols-3">
+            <div class="flex justify-center items-center">
+                <button id="bold" class=" p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-bold"></i></button>
+                <button id="underline" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-underline"></i></button>
+                <button id="italic" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-italic"></i></button>
+            </div>
+            <div class="flex justify-center items-center">
+                <button id="align-left" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-align-left"></i></button>
+                <button id="align-right" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-align-right"></i></button>
+                <button id="align-center" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-align-center"></i></button>
+                <button id="align-justify" class="p-5 btn bg-transparent border-0 hover:bg-transparent active:bg-indigo-500 focus:bg-indigo-500"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <div class="flex justify-center items-center gap-x-10">
+               <input type="number" placeholder="Font size" id="font-size-field" class="w-24 pl-3  text-black  border-2">
+               <input type="color" class="" id="color-field">
+            </div>
+           
+        </section>
+    </header>
+    <main class="bg-indigo-400 ">
+<section class="">
+    <textarea name="" id="text-field" cols="" rows="" class="w-[calc(100%-20px)] h-[calc(100vh-130px)] m-2"></textarea>
+</section>
+    </main>
+
+    <script src="./js/alignment.js"></script>
+    <script src="./js/fontStyle.js"></script>
+    <script src="./js/fontSize&Color.js"></script>
+</body>
+
+</html>
+
+<!-- /*
+<i class="fa-solid fa-align-left"></i>
+<i class="fa-solid fa-align-right"></i>
+<i class="fa-solid fa-align-center"></i>
+<i class="fa-solid fa-align-justify"></i>
+
+<i class="fa-solid fa-bold"></i>
+<i class="fa-solid fa-underline"></i>
+<i class="fa-solid fa-italic"></i>
+*/ -->
+
+
+
